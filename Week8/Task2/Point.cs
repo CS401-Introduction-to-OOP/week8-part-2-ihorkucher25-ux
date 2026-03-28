@@ -1,3 +1,4 @@
+namespace Task2;
 public struct Point
 {
     public int X { get; set; }
