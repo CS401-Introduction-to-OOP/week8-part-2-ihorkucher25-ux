@@ -1,8 +1,24 @@
 using System.Collections;
+using System.Reflection;
 
-public class FileResource : IDisposable
+public class FileResource : Resource, IDisposable
 {
-    public void Dispose(){
-    Close();  
+  public FileResource(string name) : base(name)
+    {
+    }
+
+    public override void Open()
+    {
+        IsOpen = true;
+    }
+
+    public override void Close()
+    {
+        IsOpen = false;
+    } 
+
+    public void Dispose()
+    {
+        Close();
     }
 }
