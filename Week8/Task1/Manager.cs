@@ -1,3 +1,4 @@
+namespace ResourceApp;
 
 public class ResourceManager<T> where T : Resource
 {

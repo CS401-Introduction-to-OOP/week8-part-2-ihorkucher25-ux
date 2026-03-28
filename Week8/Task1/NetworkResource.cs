@@ -1,3 +1,5 @@
+namespace ResourceApp;
+
 public class NetworkResource : IDisposable
 {
     public class NetworkResource : Resource, IDisposable

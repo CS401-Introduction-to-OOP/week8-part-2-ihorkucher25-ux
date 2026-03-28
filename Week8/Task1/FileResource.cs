@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Reflection;
+namespace ResourceApp;
 
 public class FileResource : Resource, IDisposable
 {
